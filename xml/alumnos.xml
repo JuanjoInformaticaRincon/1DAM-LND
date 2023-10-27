@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Aquí se ubica el DTD-->
+<!DOCTYPE alumnos [
+    <!--
+        + Puede haber uno o infinito
+        * Puede haber cero o infinito
+    -->
+    <!ELEMENT alumnos (alumno*)>
+    <!ELEMENT alumno (nombre,apellido,ciclo,(nota_media|nota_final))>
+    <!ATTLIST alumno expediente CDATA #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT ciclo (#PCDATA)>
+    <!ELEMENT nota_media (#PCDATA)>
+    <!ELEMENT nota_final (#PCDATA)>
+]>
+<alumnos>
+    <!--Esto es un comentario
+    Alumno:
+    Nombre
+    Apellido
+    Ciclo
+    Numero expediente
+    Nota media
+    -->
+
+    <alumno expediente = "A001">
+        <nombre>Jose María</nombre>
+        <apellido>Rodríguez</apellido>
+        <ciclo>DAM</ciclo>
+        <nota_final>8</nota_final>
+    </alumno>
+    <alumno expediente = "A002">
+        <nombre>Jose</nombre>
+        <apellido>Mota</apellido>
+        <ciclo>ASIR</ciclo>
+        <nota_media>7</nota_media>
+    </alumno>
+</alumnos>

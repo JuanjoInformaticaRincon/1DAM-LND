@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mi web 2</h1>
+    <p>
+        <a href="index.html">HOME</a>
+    </p>
+    <p>Elige un trabajo que ames y no tendrás que trabajar un solo día de tu vida (Confucio)</p>
+
+    <h2>Mi contacto</h2>
+    <form action="" method="post">
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required="required" autofocus />
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required="required" minlength="6" maxlength="10" />
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="mail" placeholder="Introduce tu email corporativo" multiple />
+        <label for="edad">Introduce tu edad</label>
+        <input type="number" id="edad" name="edad">
+        <label for="date">Introduce tu cumpleaños</label>
+        <input type="date" id="cumple" name="cumple" />
+        <br><label for="rango">Muestra tu grado de satisfacción</label>
+        <input type="range" id="rango" name="rango" />
+    </fieldset>
+
+    <fieldset>
+        <legend>Preguntas generales</legend>
+        <h4>¿Estás matriculado?</h4>
+
+        <input type="radio" id="si" name="encuesta" />
+        <label for="si">Sí</label>
+
+        <input type="radio" id="no" name="encuesta" checked="checked" />
+        <label for="no">No</label>
+
+        <input type="radio" id="nose" name="encuesta" />
+        <label for="nose">No sé, tengo que preguntarle a mi madre</label>
+
+        <h4>¿Estás repitiendo curso?</h4>
+
+        <input type="radio" id="p2si" name="repitiendo" />
+        <label for="p2si">Sí</label>
+
+        <input type="radio" id="p2no" name="repitiendo" checked="checked" />
+        <label for="no">No</label>
+
+        <input type="radio" id="p2nose" name="repitiendo" />
+        <label for="p2nose">No sé, tengo que preguntarle a mi madre</label>
+
+        <h5>Opinión</h5>
+        <label for="comentario">Introduce tu comentario</label>
+        <textarea name="comentario" id="comentario" maxlength="150"></textarea>
+    </fieldset>
+        <h5>Otros elementos</h5>
+        <label for="fichero">Adjunta tu certificado académico</label>
+        <input type="file" id="fichero" name="fichero" />
+
+        <h5>Módulos</h5>
+        <label for="modulos">Selecciona tus módulos</label>
+        <select name="modulos" id="modulos" size="3" multiple="multiple">
+            <option value="m1">Módulo 1: SSF</option>
+            <option value="m2">Módulo 2: BAE</option>
+            <option value="m3">Módulo 3: LND</option>
+            <option value="m4">Módulo 4: PRO</option>
+            <option value="m5">Módulo 5: FOL</option>
+        </select>
+
+        <h5>Software</h5>
+        <label for="soft">Selecciona el software que utilizas:</label>
+        <select name="soft" id="soft" multiple="multiple">
+            <optgroup label="Sistemas Operativos">
+                <option value="win">Windows</option>
+                <option value="lin">Linux</option>
+                <option value="mac">Mac</option>
+            </optgroup>
+            <optgroup label="Navegadores">            
+                <option value="saf">Safari</option>
+                <option value="op">Opera</option>
+                <option value="fir">Firefox</option>
+            </optgroup>
+        </select>
+
+        <br>
+        <input type="checkbox" id="lopd" name="lopd" />
+        <label for="checkbox">Acepto los términos</label>
+        <br><input type="submit" id="enviar" value="Validar" />
+        <br><input type="reset" id="borrar" value="Borrar datos" />
+    </form>
+</body>
+</html>
