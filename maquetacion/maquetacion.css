@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Siempre se maqueta desde el contenedor más grande hasta el más pequeño, de afuera para adentro (exterior-interior)*/
+#contenedor{
+    width: 1200px;
+    height: 1000px;
+    /*background-color: #d8d8d8;*/
+    margin: 0.5em auto;
+    padding: 0.5em auto;
+}
+
+#header{
+    height: 15%;
+    background-color: #a4a4a4;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+#nav{
+    height: 10%;
+    background-color: #424242;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+#contenido{
+    height: 53%;
+    /*background-color: white;*/
+    margin: 1em;
+}
+
+#footer{
+    height: 15%;
+    background-color: #424242;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+#section{
+    height: 100%;
+    width: 68%;
+    background-color: #a4a4a4;
+    border-radius: 1em;
+    float: left;
+    margin-left: 0.5em;
+
+}
+
+#aside{
+    height: 100%;
+    width: 28%;
+    background-color: #a4a4a4;
+    border-radius: 1em;
+    float: right;
+    margin-right: 0.5em;
+}
+
+.article{
+    width: 96%;
+    height: 20%;
+    background-color: #424242;
+    margin: 1em;
+    border-radius: 1em;
+}
