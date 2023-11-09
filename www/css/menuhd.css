@@ -40,6 +40,8 @@ nav ul li ul{
 
 nav ul li ul li{
     display: block;
+    transition-property: display, background-color;
+    transition-duration: 1.5s;
 }
 
 nav ul li:hover ul{
@@ -48,4 +50,6 @@ nav ul li:hover ul{
 
 nav ul li ul li a{
     background-color: #81914e;
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }
