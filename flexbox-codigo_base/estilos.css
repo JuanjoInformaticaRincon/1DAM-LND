@@ -1,0 +1,107 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1D202B;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+
+	display: flex;/*1º Disponer los elementos uno al lado del otro*/
+	gap: 20px; /*2º separación entre los dos elementos (contenedores)*/
+	
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+.contenedor-conciertos {
+	width: 70%; /*3º el otro 30% se lo ponemos al banner (más abajo)*/
+	display: flex; /*5º todos los elementos uno al lado del otro*/
+	flex-wrap: wrap; /*7º para que los elementos cumplan con el ancho especificado en 6º*/
+	gap: 20px; /*8º y se desajustarán las filas de carteles*/
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+	width: calc(33.33% - 20px); /*6º sin función calc       9º con función calc*/ 
+	
+}
+
+.card .textos {
+	height: 100%; /*el contenedor debe ocupar el 100% para poder distribuir los elementos de dentro*/
+
+	display: flex; /*10º para poner uno al lado del otro*/
+	flex-direction: column; /*11º para que se ponga uno debajo del otro*/
+	justify-content: space-between; /*12º (mirar height) para que se ponga un texto arriba y otro abajo del todo*/
+	
+	
+}
+
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+
+	width: 30%; /*4º*/
+	display: flex; /*13º*/
+	flex-direction: column;/*14º*/
+	justify-content: space-between;/*15º*/
+
+}
+
+.banner ul {
+	list-style: none;
+}
+
+.banner ul li {
+	margin: 15px;
+	font-weight: bold;
+}
+
+.banner .boton {
+	background: #FFD600;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+	
+}
+
+@media screen and (max-width: 700px) {
+	
+}
+
+@media screen and (max-width: 600px) {
+
+}
